@@ -1,0 +1,93 @@
+:root{
+    --background-color: hsl(0, 0%, 8%);
+    --mainBox-color: hsl(0, 0%, 12%);
+    --button-color: hsl(0, 0%, 20%);
+    --text-color: hsl(0, 0%, 100%);
+    --green-color: hsl(75, 94%, 57%);
+    --lightGray-color: hsla(0, 1%, 82%, 0.904);
+    --font-family-primary: 'Inter', sans-serif;  /* font variable */
+}
+
+body{
+    background-color: var(--background-color);
+}
+
+.backgroundBox{
+    display: grid;
+    justify-items: center; 
+    align-items: center;
+    height: 100vh; /* Example: Centers within the full viewport height */
+}
+
+.mainBox{
+    background-color: var(--mainBox-color);
+    display: grid;
+    justify-items: center; 
+    align-items: center;
+
+    padding: 2em;
+
+    border-radius: 15px;
+}
+
+ .image{
+    width: 90px;       /* Set a specific width */
+    height: 90px;      /* Set an equal height to maintain aspect ratio */
+    border-radius: 50%; /* This makes the element circular */
+    object-fit: cover;  /* Ensures the image covers the area without distortion/stretching */
+ }
+
+ .headingName{
+    font-family: var(--font-family-primary);
+    color: var(--text-color);
+    margin-top: 1.25em;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 26px;
+    padding:0;
+    
+ }
+
+ .location{
+    font-family: var(--font-family-primary);
+    color: var(--green-color);
+    font-size: 14px;
+    font-weight: 600;
+    margin-top:0.80em;
+ }
+
+ .description{
+    font-family: var(--font-family-primary);
+    color: var(--lightGray-color);
+    font-size: 14px;
+    font-weight: 400;
+ }
+
+ button{
+    background-color: var(--button-color);
+    font-family: var(--font-family-primary);
+    font-weight: 700;
+    color: var(--text-color);
+
+    border: 0;
+    border-radius:8px;
+    margin:0.60em;
+
+    width: 22em;
+    height:3em;
+ }
+
+ button:hover{
+    background-color: var(--green-color);
+    color: var(--mainBox-color);
+    font-family: var(--font-family-primary);
+    font-weight: 700;
+    cursor: pointer;
+ }
+
+@media screen and (max-width:23.4375em) { /* 375px / 16 = 23.4375em */
+    body{
+        background-color: var(--background-color);
+        width: 320px;
+    }
+}
