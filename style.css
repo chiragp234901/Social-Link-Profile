@@ -90,4 +90,10 @@ body{
         background-color: var(--background-color);
         width: 320px;
     }
+    .mainBox{
+    background-color: var(--mainBox-color);
+    display: grid;
+    justify-items: center; 
+    align-items: center;
+    }
 }
